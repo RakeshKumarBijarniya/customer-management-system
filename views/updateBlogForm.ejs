@@ -1,0 +1,21 @@
+<%-include("../partials/head.ejs")%>
+<section class="blogUpdateForm">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <h3 class="text-center m-3">Update Blog Here</h3>
+                <p class="text-center message"><%=message%></p>
+                <form action="" method="post">
+                    <label for="">Title</label>
+                    <input type="text" name="utitle" id="" class="form-control" value="<%=data.title%>">
+                    <label for="">Description</label>
+                    <textarea name="udesc" id="" class="form-control"></textarea>
+                    <button type="submit" class="form-control btn btn-dark mt-3" >Update</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

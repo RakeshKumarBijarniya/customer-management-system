@@ -1,0 +1,19 @@
+body{
+    background-image: linear-gradient(rgba(132, 23, 146, 0.534),rgb(68, 82, 9));
+    height: 100vh;
+}
+
+
+#header{
+    padding: 10px;
+    background-color: rgba(40, 5, 240, 0.418);
+    height: 70px;
+    color: #fff;
+}
+#header .logout{
+    float: right;
+}
+
+.status-button{
+    width: 100px;
+}

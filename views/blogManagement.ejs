@@ -1,0 +1,35 @@
+<%-include("../partials/head.ejs")%>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <a href="/blogCreate"><button class="btn btn-success form-control mt-4 mt-2">Add New Blogs Here</button></a>
+           
+            <table class="table table-hover">
+                <tr>
+                    <th>S.No</th>
+                    <th>Banner Title</th> 
+                    <th>Banner Description</th>
+                    <th>Created By</th>
+                    <th>Created Date</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </tr>
+                <%data.forEach((val,key)=>{%>
+                    <tr>
+                        <td><%=key+1%></td>
+                        <td><%=val.title%></td>
+                        <td><%=val.desc%></td>
+                        <td><%=val.createdBy%></td>
+                        <td><%=val.createdDate%></td>
+                        <td><a href="/updateBlog/<%=val.id%>"><button class="btn btn-warning">Update</button></td></a>
+                        <td><a href="/deleteBlog/<%=val.id%>"><button class="btn btn-danger">Delete</button></a></td>
+                    </tr>
+                <%})%>
+                
+            </table>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

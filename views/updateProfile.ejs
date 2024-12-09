@@ -1,0 +1,36 @@
+<%-include("../partials/head.ejs")%>
+
+<section id="updateProfile">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 form-container">
+                <h2>Update Profile Here!!!</h2>    
+                <h5>Status : <%=data.status%></h5>
+                <%if(message!=="notMessage"){%>
+                   <P><%=message%></P>
+                <%}%>
+              <form method="post" action="" enctype="multipart/form-data">
+                <label for="">First Name</label>
+                <input type="text" name="firstName" id="" class="form-control" value="<%=data.firstName%>">
+                <label for="">Last Name</label>
+                <input type="text" name="lastName" id="" class="form-control" value="<%=data.lastName%>">
+                <label for="">Email</label>
+                <input type="email" name="email" id="" class="form-control" disabled value="<%=data.email%>" >
+                <label for="">Gender</label>
+                <input type="radio" name="gender" id=""  value="Male" <%=data.gender=="Male" ? 'checked':""%>>
+                <label for="">Male</label>
+                <input type="radio" name="gender" id="" value="Female" <%=data.gender=="Female" ? 'checked' : ""%>>
+                <label for="">Female</label>
+                <label for="">Image</label>
+                <p><img src="<%=data.image%>" class="user-image" alt=""></p>
+                
+                <input type="file" name="image" id="" class="form-control">
+                <button type="submit" class="form-control btn btn-dark">Update</button>
+              </form>
+            </div>
+            
+        </div>
+    </div>
+</section>
+</body>
+</html>

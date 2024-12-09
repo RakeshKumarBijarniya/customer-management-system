@@ -1,0 +1,24 @@
+<%-include("../partials/head.ejs")%>
+
+<section id="changePassowordForm">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 ">
+                <h2>Change Password Here!!!</h2>
+                <p><%=message%></p>
+              <form method="post" action="" >
+                <label for="">Current Password</label>
+                <input type="password" name="currentPassword" id="" class="form-control">
+                <label for="">New Password</label>
+                <input type="password" name="newPassword" id="" class="form-control">
+                <label for="">Confirm Password</label>
+                <input type="password" name="confirmPassword" id="" class="form-control mb-2">
+                <button type="submit" class="form-control btn btn-dark">Change Password</button>
+              </form>
+            </div>
+            
+        </div>
+    </div>
+</section>
+</body>
+</html>

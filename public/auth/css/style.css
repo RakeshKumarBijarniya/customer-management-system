@@ -1,0 +1,79 @@
+body{
+    background-image: linear-gradient(rgba(16, 78, 212, 0.534),rgb(169, 202, 23));
+    height: 100vh;
+}
+#login{
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#login .form-container{
+    border-radius: 10px;
+    background-color: rgb(253, 253, 252);
+    box-shadow: 2px 5px 5px 5px;
+   
+}
+#login .forgot-pass{
+  text-align: right;
+  margin-top: 10px;
+  
+} 
+#login .forgot-pass a{
+    text-decoration: none;
+    font-size: 20px;
+    color: darkgreen;
+}
+
+#login a{
+    text-decoration:none;
+}
+
+#login .create-button{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    display: flex;
+    
+}
+
+
+#forgotemail{
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    
+}
+#forgotemail .form-container{
+    border-radius: 10px;
+   
+    box-shadow: 2px 5px 5px 5px;
+    padding: 30px;
+}
+
+#login .create-button a{
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: 18px;
+}
+
+#createAccount{
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+#createAccount .form-container{
+    padding: 10px;
+    border-radius: 10px;
+    color: #ffff;
+    background-color: rgb(94, 105, 91);
+    box-shadow: 5px 5px 15px 15px rgb(52, 113, 153);
+   
+}

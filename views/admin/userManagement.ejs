@@ -1,0 +1,39 @@
+<%-include('../../partials/admin/head.ejs')%>
+    <section id="mid">
+        <div class="container">
+            <div class="row">
+                <%-include('../../partials/admin/left.ejs')%>
+                <div class="col-md-9">
+                    <h2>User Management</h2>
+                    <%if(message!== "hh"){%>
+                        <h5 class="text-light"><%=message%></h5>
+                    <%}%> 
+                    <table class="table table-striped">
+                      <tr>
+                        <th>S.No</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>D.O.B.</th>
+                        <th>Created Date</th>
+                        <th>Role</th>
+                        <th>Status</th>
+                       </tr>
+                        <%data.forEach((val,key)=>{%>
+                           <tr>
+                            <td class="fw-bold"><%=key+1%></td>
+                            <td class="fw-bold"><%=val.firstName%></td>
+                            <td class="fw-bold"><%=val.email%></td>
+                            <td class="fw-bold"><%=val.dob%></td>
+                            <td class="fw-bold"><%=val.createdDate%></td>
+                            <td class="fw-bold"><%=val.role%></td>
+                            <td class="fw-bold"><a href="/admin/changestatus/<%=val.status%>/<%=val.id%>">
+                                <button class="btn btn-success status-button"><%=val.status%></button></a></td>
+                           </tr>
+                        <%})%>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

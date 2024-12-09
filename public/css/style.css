@@ -1,0 +1,56 @@
+body{
+    background-image: linear-gradient(rgba(16, 78, 212, 0.534),rgb(169, 202, 23));
+    height: 100vh;
+}
+
+
+#header{
+    padding: 10px;
+    background-color: rgba(245, 245, 245, 0.418);
+    height: 70px;
+}
+
+#header button{
+    float:right;
+    font-weight:400;
+    font-size: large;
+    
+}
+#header h4{
+    color:#111010;
+}
+
+#changePassowordForm{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+}
+#changePassowordForm h2{
+    text-align: center;
+}
+    
+#updateProfile{
+    height: 90vh;
+    display: flex;
+  
+    align-items: center;
+}
+
+#updateProfile .form-container{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: transparent;
+    box-shadow:  20px 20px 50px 10px rgba(245, 245, 245, 0.719) inset;
+}
+.user-image{
+    width: 50px;
+    border-radius: 50%;
+}
+.user-container{
+    display: flex;
+}
+.message{
+    color: rgb(128, 255, 0);
+    font-weight: 500;
+    font-size: 30px;
+}
